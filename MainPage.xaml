@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="BlockScroller.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BlockScroller"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer x:Name="Scroller" Height="Auto" Width="Auto"
+                  HorizontalScrollMode="Enabled"
+                  HorizontalScrollBarVisibility="Auto" 
+                  HorizontalSnapPointsType="MandatorySingle"
+                  HorizontalSnapPointsAlignment="Far"
+                  VerticalScrollBarVisibility="Disabled">
+            <StackPanel Orientation="Horizontal">
+                <Grid x:Name="FirstImage" Padding="300 0">
+                    <Image x:Name="test" Source="Assets/Images/01_m-staff_190801-xl.jpg" />
+                </Grid>
+                <Grid x:Name="SecondImage" Padding="300 0">
+                    <Image Source="Assets/Images/02_m-staff_190801-xl.jpg" />
+                </Grid>
+                <Grid x:Name="ThirdImage" Padding="300 0">
+                    <Image Source="Assets/Images/03_m-staff_190801-xl.jpg" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
