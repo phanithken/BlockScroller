@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -14,23 +13,23 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace BlockScroller
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class SecondPage : Page
     {
-        public MainPage()
+        public SecondPage()
         {
             this.InitializeComponent();
         }
 
-        public void Navigate(object sender, RoutedEventArgs e)
+        public void Goback(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SecondPage));
+            this.Frame.GoBack();
         }
     }
 }

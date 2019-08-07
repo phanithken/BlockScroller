@@ -17,13 +17,19 @@
                   VerticalScrollBarVisibility="Disabled">
             <StackPanel Orientation="Horizontal">
                 <Grid x:Name="FirstImage" Padding="300 0">
-                    <Image x:Name="test" Source="Assets/Images/01_m-staff_190801-xl.jpg" />
+                    <Button Click="Navigate" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="0" BorderThickness="0">
+                        <Image x:Name="test" Source="Assets/Images/01_m-staff_190801-xl.jpg" Stretch="UniformToFill" />
+                    </Button>
                 </Grid>
                 <Grid x:Name="SecondImage" Padding="300 0">
-                    <Image Source="Assets/Images/02_m-staff_190801-xl.jpg" />
+                    <Button Click="Navigate" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="0" BorderThickness="0">
+                        <Image Source="Assets/Images/02_m-staff_190801-xl.jpg" Stretch="UniformToFill" />
+                    </Button>
                 </Grid>
                 <Grid x:Name="ThirdImage" Padding="300 0">
-                    <Image Source="Assets/Images/03_m-staff_190801-xl.jpg" />
+                    <Button Click="Navigate" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="0" BorderThickness="0">
+                        <Image Source="Assets/Images/03_m-staff_190801-xl.jpg" Stretch="UniformToFill" />
+                    </Button>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
